@@ -858,7 +858,7 @@ URL: https://github.com/superbestdev/printontotheme
 		text-align: center;
 		background-image: url('../img/about-background.png');
 		background-repeat: no-repeat;
-		background-size: 100%;
+		background-size: 100% 100%;
 		overflow: hidden;
 	}
 	.about-banner h1{
@@ -879,6 +879,14 @@ URL: https://github.com/superbestdev/printontotheme
 	#about-us{
 		padding: 120px 0;
 		color: #3c454b;
+		border-bottom: 1px solid #ebeced;
+	}
+	#about-us h1{
+		font-family: 'HUBERTJOCHAMSusa-Regular';
+		font-size: 34px;
+		color: #1abc9c;
+		text-align: center;
+		margin-bottom: 75px; 
 	}
 	#about-us h4{
 		font-family: 'Roboto-Bold';
@@ -888,11 +896,52 @@ URL: https://github.com/superbestdev/printontotheme
 		font-family: 'GloriaHallelujah';
 		font-size: 20px;
 	}
-	#about-us img{
-		margin: 0 0 30px 30px;
+	#about-us .row img{
+		margin: 0 0 7% 7%;
+	}
+	#about-us img.hidden-md-up{
+		margin-bottom: 50px; 
 	}
 	.about-team{
 		line-height: 2.1em;
+	}
+	#quick-facts{
+		padding: 110px 0;
+		text-align: center;
+		border-bottom: 1px solid #ebeced;
+	}
+	#quick-facts h1{
+		font-family: 'HUBERTJOCHAMSusa-Regular';
+		font-size: 34px;
+		color: #ed8e1d;
+		margin-bottom: 50px;
+	}
+	#quick-facts h2{
+		font-family: 'RobotoSlab-Regular';
+		font-size: 22px;
+		color: #1abc9c;
+		margin: 30px;
+	}
+	#quick-facts p{
+		font-size: 14px;
+		padding: 0 40px;
+	}
+	#some-question{
+		padding: 110px 0;
+		text-align: center;
+	}
+	#some-question h1{
+		font-family: 'RobotoSlab-Light';
+		font-size: 34px;
+	}
+	#some-question h2{
+		font-size: 24px;
+		color: #656d78;
+		margin-bottom: 60px;
+	}
+	#some-question .yellow-btn{
+		font-family: 'Roboto-Black';
+		font-size: 26px;
 	}
 /* about page---*/
 
