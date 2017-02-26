@@ -1,0 +1,331 @@
+/*--- General */
+	#header .mobile-menu{
+		display: none;
+	}
+
+	#header .main-menu.desktop-menu{
+		margin-right: 60px;
+	}
+
+	@media screen and (max-width: 1200px) {
+		#header .main-menu.desktop-menu, #header .desktop-cart{
+			display: none;
+		}
+
+		#header .mobile-menu{
+			display: block;
+		}
+	}
+
+	@media screen and (max-width: 400px){
+		#header .navbar-brand{
+			margin: 2px;
+		}
+		#header .mobile-menu .nav-item{
+			padding: 13px 10px;
+		}
+		#header .mobile-menu .count-cart{
+			margin: 0;
+			display: block;
+			text-align: center;
+		}
+		#header .mobile-menu .mobile-cart .nav-link{
+			line-height: 24px;
+			padding: 0;
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		#footer{
+			text-align: center;
+		}
+		#footer a{	
+			font-size: 35px;
+		}
+		#footer a:hover{
+			text-decoration: none;
+		}
+		.footer-left span{
+			border: none;
+			display: block;
+			max-height: initial;
+			padding: 10px 0;
+		}
+		.footer-left span.social-link{
+			display: inline-block;
+			padding: 30px 15px;
+		}
+		.footer-left span.social-link img{
+			width: 44px;
+		}
+		.footer-left .copyright{
+			font-size: 24px;
+			padding: 25px; 
+		}
+		.footer-right{
+			display: none;
+		}
+		#footer .mobile-footer-logo{
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		#feature img{
+			width: 80%;
+			margin: 15px;
+		}
+
+		.page-caption h2{
+			font-size: 22px;
+		}
+		.page-caption h1{
+			font-size: 28px;
+		}
+	}
+	
+/* general ---*/
+
+
+	img.mob-slider{
+		display: none !important;
+	}
+	.mobile-gallery{
+		display: none;
+	}	
+
+	@media screen and (max-width: 1200px) {
+		
+		#main-slider .flex-control-thumbs img{
+			width: 60px;
+			height: 60px;
+			border-width: 4px;
+		}
+		#main-slider .flex-control-thumbs li{
+			margin: 0 18px;
+		}
+		#main-slider .flex-control-thumbs{
+			bottom: -35px;
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		img.mob-slider{
+			display: block !important;
+		}
+		img.web-slider{
+			display: none !important;
+		}
+		img.progress-arrow{
+			display: none !important;
+		}
+
+		.mobile-gallery{
+			display: block;
+		}
+		.desktop-gallery{
+			display: none;
+		}
+
+		.portfolio-category{
+			text-align: center;
+		}
+		.portfolio-category p{
+			margin-right: 0;
+		}
+		.portfolio-category .row div{
+			margin-top: 40px;
+		}
+	}
+
+	@media only screen and ( min-width:768px) and ( max-width:960px ){
+		.flex-inner {
+		    max-width:700px !important;
+		}
+
+		.slider-heading h1 {
+		    font-size: 20px;
+		    line-height: 36px;
+		}
+
+		.slider-text p {
+		    font-size: 15px;
+		    line-height: 22px;
+		}
+
+		.flex-content {
+		    top: 8%;
+		}
+
+		.slider-text {
+		    margin: 20px 0px;
+		}
+
+		.slider-butt a {
+		    margin: 0px;
+		    padding: 12px 25px;
+			font-size:21px;
+		}
+		#product-progress .animation{
+			left: 8% !important;
+		}
+		#product-progress .progress-ad{
+			padding: 0;
+		}
+		img.progress-arrow{
+			right: -15px !important;
+		}
+
+		.flexslider1 .flex-control-thumbs img {
+		    width: 65px !important;
+		    height: 65px !important;
+		}
+
+	}
+
+	@media only screen and ( min-width:600px) and ( max-width:767px ){
+
+		.flex-content {
+		    top: 5%;
+		    width: 95%;
+		}
+
+		.main-flex {
+		    width:100%;
+			text-align:center;
+		}
+
+		.slider-heading h1 {
+		    font-size: 32px;
+			line-height: 46px;
+		}
+
+		.slider-text {
+		    margin: 20px 0px 10px;
+		}
+
+		.slider-butt a{
+			font-size:25px;
+		}
+
+		#product-progress .animation{
+			left: 35% !important;
+		}
+		#product-progress .progress-ad{
+			padding: 30;
+		}
+		#product-progress .progress-ad h3{
+			font-size: 35px;
+		}
+		#product-progress .progress-ad span{
+			font-size: 20px;
+		}
+
+		.testimonial-heading h1{
+			background:none;
+		}
+
+		.testimonial-heading h1 {
+		    padding: 0px 80px;
+		    font-size: 34px;
+		}
+
+		.new-slides li p {
+		    margin: 0;
+		    padding: 70px 10px 120px;
+		    background-position: top center, bottom center;
+		}
+
+	}
+
+	@media only screen and ( min-width: 460px) and ( max-width:559px ){
+		.flex-inner {
+		    max-width:400px !important;
+		}
+
+		.slider-text p {
+		    font-size: 13px !important;
+		    line-height:20px !important;
+		}
+
+		.slider-heading h1 {
+		    font-size: 27px !important;
+			line-height: 42px !important;
+		}
+
+		.slider-butt {
+		    margin: 12px 0px 0px !important;
+		}
+
+	}
+
+	@media only screen and ( min-width: 320px) and ( max-width: 599px ){
+
+		.flex-control-nav{
+			display:none;
+		}
+
+		.main-flex {
+		    width: 100%;
+			text-align:center;
+		}
+
+		.flex-inner {
+		    max-width: 300px;
+		}
+
+		.slider-heading h1 {
+		    font-size: 18px;
+		    font-weight: 100;
+		    line-height: 26px;
+		}
+
+		.slider-text p {
+		    font-size:8px;
+		    line-height: 12px;
+		}
+
+		.slider-text {
+		    margin:8px 0px 0px;
+		}
+
+		.slider-butt a {
+		    padding: 12px 25px;
+		    font-size: 14px;
+		}
+
+		.slider-butt {
+		    margin: 5px 0px 0px;
+		}
+
+		.flex-content {
+		    top: 5%;
+		}
+		#product-progress .animation{
+			left: 23% !important;
+		}
+
+		.experience-ad{
+			margin-top: 50px;
+		}
+
+		.testimonial-heading h1{
+			font-size:29px;
+			background:none;
+		}
+
+		.new-slides li p {
+		    margin: 0px 0px;
+		    padding: 70px 10px 120px;
+		    font-size: 16px;
+		    line-height: 28px;
+		    background-position: top center, bottom center;
+		}
+		table .mask{
+			font-size: 16px;
+		}
+		.green-btn{
+			font-size: 20px;
+		}
+
+	}
