@@ -364,5 +364,8 @@
 		#why-banner{
 			height: 360px;
 		}
+		.blog-container{
+			padding: 20px 5px;
+		}
 
 	}
