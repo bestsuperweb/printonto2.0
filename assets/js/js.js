@@ -1,5 +1,7 @@
 $( document ).ready(function() {
 
+    new WOW().init();
+
 	//LOADER/SPINNER
 	$(window).bind("load", function() {
 
@@ -55,6 +57,12 @@ $( document ).ready(function() {
 			});
 	    }
 	});
+	$('.why-images img').hide();
+	$('.why-images img').each(function(index, element){
+		setTimeout( function(){
+				    $(element).show().addClass('animated slideInUp');
+				  }, (500 * index));
+	});
     
     $('.flex-control-thumbs img').on('mouseenter', function(){
     	var index = $('.flex-control-thumbs img').index($(this));
@@ -81,6 +89,5 @@ $( document ).ready(function() {
     	$('.flex-control-thumbs li span.thumb-over').remove();
     });	
 
-    new WOW().init();
 	
 });

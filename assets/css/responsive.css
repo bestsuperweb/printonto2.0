@@ -107,6 +107,10 @@
 		#main-slider .flex-control-thumbs{
 			bottom: -35px;
 		}
+
+		#convince img{
+			width: 100%;
+		}
 	}
 
 	@media screen and (max-width: 767px){
@@ -138,6 +142,33 @@
 		}
 		#single-product-banner img, .about-banner img{
 			width: 90%;
+		}
+		#why-banner h2{
+			font-size: 25px;
+		}
+		#why-banner h1{
+			font-size: 27px;
+		}
+		.why-images img{
+			width: 55vw;
+		}
+		#description h3{
+			padding: 0;
+		}
+		#description p{
+			padding: 0;
+		}
+		#description img{
+			width: 70%;
+			margin: 5px;
+		}
+		#description a{
+			margin: 10px 0; 
+		}
+	}
+	@media screen and (max-width: 543px){
+		#convince img{
+			width: initial;
 		}
 	}
 
@@ -329,6 +360,9 @@
 		}
 		.green-btn{
 			font-size: 20px;
+		}
+		#why-banner{
+			height: 360px;
 		}
 
 	}

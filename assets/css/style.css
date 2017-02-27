@@ -93,6 +93,11 @@ URL: https://github.com/superbestdev/printontotheme
 	.float-left{
 		float: left;
 	}
+	.parallax {
+	    background-attachment: fixed !important;
+	    background-repeat: no-repeat !important;
+	    background-size: cover !important;
+	}
 	/*---- preloader */
 	.spn_hol {
 	    position: fixed;
@@ -379,6 +384,7 @@ URL: https://github.com/superbestdev/printontotheme
 	}
 
 	.yellow-btn{
+		display: inline-block;
 		font-size: 18px;
 		color: #fff;
 		text-transform: uppercase;
@@ -800,7 +806,6 @@ URL: https://github.com/superbestdev/printontotheme
 	#get-started .container h1{
 		font-size: 34px;
 		font-family: 'RobotoSlab-Thin';
-		color: #000;
 		margin: 50px 0 10px 0;
 		text-transform: uppercase;
 	}
@@ -1042,6 +1047,145 @@ URL: https://github.com/superbestdev/printontotheme
 		opacity: .2;
 	}
 /* single product---*/
+
+/*--designable product */
+	#designable-banner{
+		background: url(../img/designable-background.jpg);
+		padding: 60px 0;
+		color: #fff;
+		text-align: center;
+		font-family: 'Roboto-Bold';
+	}
+	#designable-main{
+		padding: 40px 0 120px;
+		text-align: center;
+	}
+	#designable-main img{
+		margin-top: 80px;
+	}
+	#designable-main h3{
+		font-family: 'Roboto-Bold';
+		font-size: 23px;
+		color: #2c3d50;
+		margin: 20px 0;
+	}
+	#designable-main p{
+		color: #656d78;
+		padding: 0 10%;
+	}
+	#designable-main .price{
+		color: #f39c12;
+		font-size: 22px;
+		margin-bottom: 40px;
+	}
+/* designable product ---*/
+
+/*---why choose us */
+	#why-banner{
+		padding-top: 75px;
+		text-align: center;
+		background-color: #e8e8e7;
+		border-bottom: 1px solid #ebeced;
+		overflow: hidden;
+		height: 430px;
+	}	
+	#why-banner h2{
+		font-size: 30px;
+	}
+	#why-banner h1{
+		font-family: 'Roboto-Bold';
+		font-size: 38px;
+		color: #f39c12;
+	}
+	.why-images{
+		margin: 70px -5% -30px 0;
+	}
+	.why-images img{
+		width: 300%;
+		box-shadow: -5px 10px 10px 5px rgba(0, 0, 0, .3);
+	}
+	#description{
+		text-align: center;
+		padding: 95px 0;
+		border-bottom: 1px solid #ebeced;
+	}
+	#description h3{
+		font-family: 'Roboto-Bold';
+		font-size: 20px;
+		color: #1abc9c;
+		padding: 0 20%;
+	}
+	#description p{
+		font-size: 16px;
+		margin: 30px 0;
+		padding: 0 10%;
+	}
+	#description img{
+		width: 100%;
+	}
+	#description h5{
+		font-family: 'Roboto-MediumItalic';
+		font-size: 16px;
+		margin: 50px 0;
+	}
+	#convince{
+		padding: 120px 0;
+		border-bottom: 1px solid #ebeced;		
+	}
+	#convince h1{
+		font-family: 'HUBERTJOCHAMSusa-Regular';
+		font-size: 34px;
+		color: #f39c12;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	#convince .row{
+		margin: 15px 0;
+	}
+	#convince h2{
+		font-family: 'RobotoSlab-Regular';
+		font-size: 22px;
+		color: #1abc9c;
+	}
+	#convince p{
+		color: #656d78;
+	}
+	#real-story{
+		padding: 120px 0;
+		text-align: center;
+	}
+	#real-story h1{
+		font-family: 'RobotoSlab-Light';
+		font-size: 34px;
+		color: #434a54;
+	}
+	#real-story p{
+		font-family: 'Roboto-LightItalic';
+		font-size: 16px;
+		margin: 20px 0 85px;
+	}
+	.green-background{
+		background-image: url('../img/green-background.png');
+	}
+	#get-started.green-background{
+		color: #fff;
+	}
+/* why choose us---*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
