@@ -292,8 +292,22 @@
 		}
 
 	}
+	@media only screen and (min-width: 599px) and (max-width: 767px){
+		.order-progress {
+		    width: 20vw;
+		    height: 20vw;
+		}
+	}
 
 	@media only screen and ( min-width: 320px) and ( max-width: 599px ){
+
+		.order-progress {
+		    width: 30vw;
+		    height: 30vw;
+		}
+		.progress-div{
+			border: none;
+		}
 
 		.flex-control-nav{
 			display:none;

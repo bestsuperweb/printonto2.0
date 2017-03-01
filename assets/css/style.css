@@ -1483,8 +1483,108 @@ URL: https://github.com/superbestdev/printontotheme
 	}
 /* blog post---*/
 
+/*--- customer dashboard */
+	#customer-dashboard-banner{
+		padding: 75px 0;
+		background: #f5f5f5;
+		text-align: center;
+	}
+	#customer-dashboard-banner h2{
+		font-family: 'Roboto-Bold';
+		color: #2c3e50;
+	}
+	#customer-dashboard-banner p{
+		color: #808080;
+		font-size: 16px;
+	}
+	#customer-dashboard-main{
+		padding: 120px 0;		
+	}
 
-
+	.customer-order{
+		padding: 10px 20px;
+		text-align: center;
+		width: 85%;
+		margin: auto auto;
+		box-shadow: 0 3px 5px 1px rgba(0, 0, 0, .2);
+		margin-top: 50px;
+	}
+	.customer-order h2{
+		font-size: 26px;
+	}
+	.customer-order p{
+		font-size: 16px;
+		color: #808080;
+	}
+	.customer-order img{
+		width: 100%;
+		margin: 10% 0;
+	}
+	.progress-div{
+		border-left: 1px solid rgba(0, 0, 0, .2);
+		padding: 0 20px;
+	}
+	.order-progress{
+		width: 7vw;
+		height: 7vw;
+		border:solid 12px #1bc98e;
+		border-radius:50%;
+		position:relative;
+		transform:rotate(45deg);
+		display: inline-block;
+	}
+	div.order-progress:before,div.order-progress:after {
+		content:'';
+		position:absolute;
+		top:-12px;
+		left:-12px;
+		border:solid 12px transparent;
+		height:inherit;
+		width:inherit;
+		border-radius:inherit;
+		box-shadow: 0 0 1px 1px #fff;
+	}
+	.c30, .c40, .c50 {
+		border-top-color:#1ca8dd;
+		border-right-color:#1ca8dd;
+	}
+	.c30:before {
+		border-right-color:#1bc98e !important;
+		transform:rotate(18deg)
+	}
+	.c40:before {
+		border-top-color:#1bc98e !important;
+		transform:rotate(144deg)
+	}
+	.c80 {
+		border-color:#1ca8dd !important;
+		border-left-color:#1bc98e !important;
+	}
+	.c80:before {
+		border-bottom-color:#1ca8dd !important;
+		transform:rotate(18deg)
+	}
+	.progress-percent{
+		font-size: 12px !important;
+		margin-bottom: 0;
+	}
+	.customer-order-menu{
+		margin: 20px 0;
+		color: rgba(0,0,0,.3);
+	}
+	.customer-order-menu a{
+		color: #ee5523;
+		padding-right: 5px;
+		text-transform: uppercase;
+	}
+	.customer-order-social{
+		text-align: center;
+		margin: 10px 0;
+	}
+	.customer-order-social a{
+		padding: 0 20px;
+	}
+/* customer dashboard ---*/
 
 
 
