@@ -48,14 +48,16 @@ $( document ).ready(function() {
 	});
 
 	$(window).scroll(function(){
-	    var Top = $('#testimonial').offset().top - 600;
-	    if($(this).scrollTop() >= Top){	        
-			$('.flexslider1 .flex-control-nav li').each(function(index, element){
-				setTimeout( function(){
-						    $(element).removeClass('slideOutDown').addClass('animated bounceInUp');
-						  }, (100 * index));
-			});
-	    }
+		if ($('#testimonial').length) {
+			var Top = $('#testimonial').offset().top() - 600;
+		    if($(this).scrollTop() >= Top){	        
+				$('.flexslider1 .flex-control-nav li').each(function(index, element){
+					setTimeout( function(){
+							    $(element).removeClass('slideOutDown').addClass('animated bounceInUp');
+							  }, (100 * index));
+				});
+		    }
+		}	    
 	});
 	$('.why-images img').hide();
 	$('.why-images img').each(function(index, element){
