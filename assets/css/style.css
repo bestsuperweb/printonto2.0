@@ -109,7 +109,7 @@ URL: https://github.com/superbestdev/printontotheme
 	    background: #fff;
 	    z-index: 50000000000;
 	    opacity: 1;
-	     -webkit-transition: all 1s;
+	    -webkit-transition: all 1s;
 	    -moz-transition: all 1s;
 	    -o-transition: all 1s;
 	    transition: all 1s;
@@ -1485,7 +1485,7 @@ URL: https://github.com/superbestdev/printontotheme
 
 /*--- customer dashboard */
 	#customer-dashboard-banner{
-		padding: 75px 0;
+		padding: 35px 0;
 		background: #f5f5f5;
 		text-align: center;
 	}
@@ -1498,7 +1498,7 @@ URL: https://github.com/superbestdev/printontotheme
 		font-size: 16px;
 	}
 	#customer-dashboard-main{
-		padding: 120px 0;		
+		padding: 60px 0;		
 	}
 
 	.customer-order{
@@ -1507,7 +1507,17 @@ URL: https://github.com/superbestdev/printontotheme
 		width: 85%;
 		margin: auto auto;
 		box-shadow: 0 3px 5px 1px rgba(0, 0, 0, .2);
+		border-radius: 2px;
 		margin-top: 50px;
+		-webkit-transition: all 1s;
+	    -moz-transition: all 1s;
+	    -o-transition: all 1s;
+	    transition: all 1s;
+	}
+	.customer-order:hover{
+		transform: scale(1.05);
+		cursor: pointer;
+		box-shadow: 0 2px 5px 1px rgba(0, 0, 0, .2);
 	}
 	.customer-order h2{
 		font-size: 26px;
@@ -1550,11 +1560,11 @@ URL: https://github.com/superbestdev/printontotheme
 	}
 	.c30:before {
 		border-right-color:#1bc98e !important;
-		transform:rotate(18deg)
+		transform:rotate(18deg);
 	}
 	.c40:before {
 		border-top-color:#1bc98e !important;
-		transform:rotate(144deg)
+		transform:rotate(144deg);
 	}
 	.c80 {
 		border-color:#1ca8dd !important;
@@ -1562,7 +1572,7 @@ URL: https://github.com/superbestdev/printontotheme
 	}
 	.c80:before {
 		border-bottom-color:#1ca8dd !important;
-		transform:rotate(18deg)
+		transform:rotate(18deg);
 	}
 	.progress-percent{
 		font-size: 12px !important;
@@ -1580,12 +1590,30 @@ URL: https://github.com/superbestdev/printontotheme
 	.customer-order-social{
 		text-align: center;
 		margin: 10px 0;
+		font-family: 'HUBERTJOCHAMSusa-Regular';
+	    font-size: 16px;
+	    line-height: 35px;
+	    color: #aaa;
 	}
 	.customer-order-social a{
-		padding: 0 20px;
+		padding: 0 15px;
+	}
+	.customer-order-social a img{		
+		-webkit-transition: all 1s;
+	    -moz-transition: all 1s;
+	    -o-transition: all 1s;
+	    transition: all 1s;		
+	}
+	.customer-order-social a img:hover{
+		transform: rotate(360deg)scale(1.5);
 	}
 /* customer dashboard ---*/
 
+/*--- customer order */
+	.order-detail{
+		text-align: center;
+	}
+/* customer order----*/
 
 
 
