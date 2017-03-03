@@ -48,9 +48,9 @@ $( document ).ready(function() {
 	});
 
 	$(window).scroll(function(){
-		if ($('#testimonial').length) {
-			var Top = $('#testimonial').offset().top() - 600;
-		    if($(this).scrollTop() >= Top){	        
+		if($('#testimonial').length){
+			var top = $('#testimonial').offset().top - 600;
+		    if($(this).scrollTop() >= top){	        
 				$('.flexslider1 .flex-control-nav li').each(function(index, element){
 					setTimeout( function(){
 							    $(element).removeClass('slideOutDown').addClass('animated bounceInUp');
