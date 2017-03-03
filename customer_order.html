@@ -18,8 +18,10 @@
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" >
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-dropdownhover.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/progress-circle.css">
     <link rel="stylesheet" type="text/css" href="assets/slider/flexslider.css">
     <link rel="stylesheet" type="text/css" href="assets/slider/test-slider.css">
+    
 
   </head>
   <body>
@@ -120,17 +122,43 @@
 
     <section id="customer-dashboard-main">
     	<div class="container">
-    		<h2>"Name of Order as Created by User"</h1>
-    		<p>ORDER #512465135</p>
+    		<h3 class="order-name">"Name of Order as Created by User"</h3>
+    		<p class="order-number">ORDER #512465135</p>
     		<div class="row">
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-					<img src="assets/img/customer-order-1.png" width="100%">
+    			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					<img src="assets/img/customer-order-1.png" width="90%" class="m-x-auto d-block">
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 order-detail">
-					<div class="order-progress c30">
-						<span>40%</span>   								
+					<div class="progress-circle progress-25 ">
+						<span class="show-percent">25</span>			
 					</div>
+					<table class="table table-striped">
+						<tr>
+							<td><b>Material</b></td>
+							<td>Canvas</td>
+						</tr>
+						<tr>
+							<td><b>Dimensions</b></td>
+							<td>12 inches x 13 inches</td>
+						</tr>
+						<tr>
+							<td><b>Purchase Price</b></td>
+							<td>$120.00</td>
+						</tr>
+						<tr>
+							<td><b>Estimated Delivery Date</b></td>
+							<td>02 / 03 / 2017</td>
+						</tr>
+					</table>
+
+					<div class="order-operation">
+						<a href="#" class="green-btn">Duplicate order</a>
+						<a href="#" class="green-btn">Update order</a>
+						<a href="#" class="yellow-btn">Need help?</a>
+					</div>
+					     
 				</div>
+				
 			</div>
     	</div>
     </section>

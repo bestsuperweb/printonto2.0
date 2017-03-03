@@ -351,7 +351,7 @@
     		<div class="ourwork-caption">
     			Some of our works
     		</div>
-    		<table class="desktop-gallery">
+    		<table class="desktop-gallery gallery-table">
     			<tr>
     				<td class="wow bounceInLeft"><img src="assets/img/gallery-1.jpg"><div class="mask">Image from Pinterest</div>
     					<p class="category-mark vinyl">vinyl</p></td>
@@ -374,7 +374,7 @@
     			</tr>
     		</table>
 
-    		<table class="mobile-gallery">
+    		<table class="mobile-gallery gallery-table">
     			<tr>
     				<td class="wow bounceInLeft" ><img src="assets/img/gallery-1.jpg"><div class="mask">Image from Pinterest</div>
     					<p class="category-mark vinyl">vinyl</p></td>
