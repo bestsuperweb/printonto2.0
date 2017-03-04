@@ -652,12 +652,18 @@ URL: https://github.com/superbestdev/printontotheme
 		-moz-animation-duration: 1.5s;
 		-moz-animation-delay: 1.5s;
 		-moz-animation-iteration-count: infinite;
+		animation-duration: 1.5s;
+		animation-delay: 1.5s;
+		animation-iteration-count: infinite;
 		animation-timing-function: ease-out;
 	}
 	#affordable-it, #resolution-it{
 		-moz-animation-duration: 3s;
 		-moz-animation-delay: 3s;
 		-moz-animation-iteration-count: infinite;
+		animation-duration: 3s;
+		animation-delay: 3s;
+		animation-iteration-count: infinite;
 		animation-timing-function: ease-out;
 	}
 
