@@ -44,3 +44,12 @@ hr {
 a.custom-last span{
   width: initial !important;
 }
+.customer-user-div{
+  text-align: center;
+}
+.customer-user-img{
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px gray;
+  margin: 15px auto;
+}
