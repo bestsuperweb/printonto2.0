@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>
+      
+        Admin Messages on Print Onto
+      
+    </title>
+
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
+    
+      <link href="../assets/css/toolkit-light.css" rel="stylesheet">
+    
+    
+    <link href="../assets/css/application.css" rel="stylesheet">
+
+    <style>
+      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+      /* this chunk of css is not part of the toolkit :) */
+      body {
+        width: 1px;
+        min-width: 100%;
+        *width: 100%;
+      }
+    </style>
+  </head>
+
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 sidebar">
+        <nav class="sidebar-nav">
+          <div class="sidebar-header">
+            <button class="nav-toggler nav-toggler-md sidebar-toggler" type="button" data-toggle="collapse" data-target="#nav-toggleable-md">
+              <span class="sr-only">Toggle nav</span>
+            </button>
+            <a class="sidebar-brand img-responsive" href="../index-light/index.html">
+              <img style="max-height: 45px;" src="../images/print-onto-logo.png" onmouseover="this.src='../images/print-onto-logo-dark.png'" onmouseout="this.src='../images/print-onto-logo.png'">
+            </a>
+          </div>
+
+          <div class="collapse nav-toggleable-md" id="nav-toggleable-md">
+            <form class="sidebar-form">
+              <input class="form-control" type="text" placeholder="Search...">
+              <button type="submit" class="btn-link">
+                <span class="icon icon-magnifying-glass"></span>
+              </button>
+            </form>
+            <ul class="nav nav-pills nav-stacked flex-column">
+              <li class="nav-header">Admin Options</li>
+              <li class="nav-item">
+                <a class="nav-link " href="../index-light/index.html">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="../open-orders/index.html">Open Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="../completed-orders/index.html">Completed Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="../canceled-orders/index.html">Canceled Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../messages/index.html">Messages</a>
+              </li>
+
+              <li class="nav-header">More</li>
+              <li class="nav-item">
+                <a class="nav-link " href="../revenue/index.html">Revenue</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="../products/index.html">Manage Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="../users/index.html">Manage Users</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "href="../docs/index.html">
+                  Toolkit docs
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#docsModal" data-toggle="modal">
+                  Example modal
+                </a>
+              </li>
+            </ul>
+            <hr class="visible-xs mt-3">
+          </div>
+        </nav>
+      </div>
+      <div class="col-md-9 content">
+        <div class="dashhead">
+  <div class="dashhead-titles">
+    <h6 class="dashhead-subtitle">Dashboards</h6>
+    <h2 class="dashhead-title">Messages</h2>
+  </div>
+
+  <div class="btn-toolbar dashhead-toolbar">
+    <div class="btn-toolbar-item input-with-icon">
+      <input type="text" value="01/01/15 - 01/08/15" class="form-control" data-provide="datepicker">
+      <span class="icon icon-calendar"></span>
+    </div>
+  </div>
+</div>
+
+<div class="flextable table-actions">
+  <div class="flextable-item flextable-primary">
+    <div class="btn-toolbar-item input-with-icon">
+      <input type="text" class="form-control input-block" placeholder="Search Messages">
+      <span class="icon icon-magnifying-glass"></span>
+    </div>
+  </div>
+  <div class="flextable-item">
+    <div class="btn-group">
+      <button type="button" class="btn btn-outline-primary">
+        <span class="icon icon-pencil"></span>
+      </button>
+      <button type="button" class="btn btn-outline-primary">
+        <span class="icon icon-erase"></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 box-body no-padding">
+            <div class="mailbox-controls">
+                <!-- Check all button -->
+                <button title="create new message" class="btn btn-secondary btn-sm form-check-toggle">&#x2709;
+                </button>
+                <div class="btn-group">
+                    <button title="select all" class="btn btn-secondary btn-sm">&#x2611;
+                    </button>
+                    <button title="unselect all" class="btn btn-secondary btn-sm">&#x2610;
+                    </button>
+                    <button title="reply" class="btn btn-secondary btn-sm">&#8630;
+                    </button>
+                    <button title="forward" class="btn btn-secondary btn-sm">&#8631;
+                    </button>
+                </div>
+                <!-- /.btn-group -->
+                <button title="refresh" class="btn btn-secondary btn-sm">&#8635;
+                </button>
+                <div class="float-right">1-50/500
+                    <div class="btn-group">
+                        <button title="newer messages" class="btn btn-secondary btn-sm">&larr;
+                        </button>
+                        <button title="older messages" class="btn btn-secondary btn-sm">&rarr;
+                        </button>
+                    </div>
+                    <!-- /.btn-group -->
+                </div>
+                <!-- /.float-right -->
+            </div>
+            <hr />
+            <div class="table-responsive mailbox-messages">
+                <table class="table table-hover table-striped">
+                  <tr style="background-color: #2eb79a; color: #fff;">
+                    <td>Bulk?</td>
+                    <td>&nbsp;</td>
+                    <td>Cust #</td>
+                    <td>Order #</td>
+                    <td>Message</td>
+                    <td>&nbsp;</td>
+                    <td>Date / Time</td>
+                  </tr>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                            <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a>
+                            </td>
+                            <td class="mailbox-name"><a href="read-mail.html">Cust001</a>
+                            </td>
+
+                            <td class="mailbox-name"><a href="read-mail.html">Ord002</a>
+                            </td>
+                            <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
+                            <td class="mailbox-attachment"></td>
+                            <td class="mailbox-date">5 mins ago</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                            <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a>
+                            </td>
+                            <td class="mailbox-name"><a href="read-mail.html">Cust001</a>
+                            </td>
+
+                            <td class="mailbox-name"><a href="read-mail.html">Ord002</a>
+                            </td>
+                            <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
+                            <td class="mailbox-attachment"><i class="fa fa-paperclip"></i>
+                            </td>
+                            <td class="mailbox-date">28 mins ago</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                            <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a>
+                            </td>
+                            <td class="mailbox-name"><a href="read-mail.html">Cust001</a>
+                            </td>
+
+                            <td class="mailbox-name"><a href="read-mail.html">Ord002</a>
+                            </td>
+                            <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
+                            <td class="mailbox-attachment"><i class="fa fa-paperclip"></i>
+                            </td>
+                            <td class="mailbox-date">11 hours ago</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                            <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a>
+                            </td>
+                            <td class="mailbox-name"><a href="read-mail.html">Cust001</a>
+                            </td>
+
+                            <td class="mailbox-name"><a href="read-mail.html">Ord002</a>
+                            </td>
+                            <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
+                            <td class="mailbox-attachment"></td>
+                            <td class="mailbox-date">15 hours ago</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                            <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a>
+                            </td>
+                            <td class="mailbox-name"><a href="read-mail.html">Cust001</a>
+                            </td>
+
+                            <td class="mailbox-name"><a href="read-mail.html">Ord002</a>
+                            </td>
+                            <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
+                            <td class="mailbox-attachment"><i class="fa fa-paperclip"></i>
+                            </td>
+                            <td class="mailbox-date">Yesterday</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                            <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a>
+                            </td>
+                            <td class="mailbox-name"><a href="read-mail.html">Cust001</a>
+                            </td>
+
+                            <td class="mailbox-name"><a href="read-mail.html">Ord002</a>
+                            </td>
+                            <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
+                            <td class="mailbox-attachment"><i class="fa fa-paperclip"></i>
+                            </td>
+                            <td class="mailbox-date">2 days ago</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                            <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a>
+                            </td>
+                            <td class="mailbox-name"><a href="read-mail.html">Cust001</a>
+                            </td>
+
+                            <td class="mailbox-name"><a href="read-mail.html">Ord002</a>
+                            </td>
+                            <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
+                            <td class="mailbox-attachment"><i class="fa fa-paperclip"></i>
+                            </td>
+                            <td class="mailbox-date">2 days ago</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                            <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a>
+                            </td>
+                            <td class="mailbox-name"><a href="read-mail.html">Cust001</a>
+                            </td>
+
+                            <td class="mailbox-name"><a href="read-mail.html">Ord002</a>
+                            </td>
+                            <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
+                            <td class="mailbox-attachment"></td>
+                            <td class="mailbox-date">2 days ago</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                            <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a>
+                            </td>
+                            <td class="mailbox-name"><a href="read-mail.html">Cust001</a>
+                            </td>
+
+                            <td class="mailbox-name"><a href="read-mail.html">Ord002</a>
+                            </td>
+                            <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
+                            <td class="mailbox-attachment"></td>
+                            <td class="mailbox-date">2 days ago</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                            <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a>
+                            </td>
+                            <td class="mailbox-name"><a href="read-mail.html">Cust001</a>
+                            </td>
+
+                            <td class="mailbox-name"><a href="read-mail.html">Ord002</a>
+                            </td>
+                            <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
+                            <td class="mailbox-attachment"></td>
+                            <td class="mailbox-date">2 days ago</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                            <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a>
+                            </td>
+                            <td class="mailbox-name"><a href="read-mail.html">Cust001</a>
+                            </td>
+
+                            <td class="mailbox-name"><a href="read-mail.html">Ord002</a>
+                            </td>
+                            <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
+                            <td class="mailbox-attachment"><i class="fa fa-paperclip"></i>
+                            </td>
+                            <td class="mailbox-date">4 days ago</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                            <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a>
+                            </td>
+                            <td class="mailbox-name"><a href="read-mail.html">Cust001</a>
+                            </td>
+
+                            <td class="mailbox-name"><a href="read-mail.html">Ord002</a>
+                            </td>
+                            <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
+                            <td class="mailbox-attachment"></td>
+                            <td class="mailbox-date">12 days ago</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                            <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a>
+                            </td>
+                            <td class="mailbox-name"><a href="read-mail.html">Cust001</a>
+                            </td>
+
+                            <td class="mailbox-name"><a href="read-mail.html">Ord002</a>
+                            </td>
+                            <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
+                            <td class="mailbox-attachment"><i class="fa fa-paperclip"></i>
+                            </td>
+                            <td class="mailbox-date">12 days ago</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                            <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a>
+                            </td>
+                            <td class="mailbox-name"><a href="read-mail.html">Cust001</a>
+                            </td>
+
+                            <td class="mailbox-name"><a href="read-mail.html">Ord002</a>
+                            </td>
+                            <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
+                            <td class="mailbox-attachment"><i class="fa fa-paperclip"></i>
+                            </td>
+                            <td class="mailbox-date">14 days ago</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                            <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a>
+                            </td>
+                            <td class="mailbox-name"><a href="read-mail.html">Cust001</a>
+                            </td>
+
+                            <td class="mailbox-name"><a href="read-mail.html">Ord002</a>
+                            </td>
+                            <td class="mailbox-subject"><b>WM06</b> - Trying to find a solution to this problem...</td>
+                            <td class="mailbox-attachment"><i class="fa fa-paperclip"></i>
+                            </td>
+                            <td class="mailbox-date">15 days ago</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- /.table -->
+            </div>
+            <!-- /.mail-box-messages -->
+        </div>
+        <!-- /.box-body -->
+        <hr />
+        <div class="col-md-12 box-footer no-padding">
+          <hr>
+          <div class="mailbox-controls">
+                <!-- Check all button -->
+                <button class="btn btn-secondary btn-sm form-check-toggle">&#x2709;
+                </button>
+                <div class="btn-group">
+                    <button class="btn btn-secondary btn-sm">&#x2610;
+                    </button>
+                    <button class="btn btn-secondary btn-sm">&#x2611;
+                    </button>
+                    <button class="btn btn-secondary btn-sm">&#8630;
+                    </button>
+                    <button class="btn btn-secondary btn-sm">&#8631;
+                    </button>
+                </div>
+                <!-- /.btn-group -->
+                <button class="btn btn-secondary btn-sm">&#8635;
+                </button>
+                <div class="float-right">1-50/500
+                    <div class="btn-group">
+                        <button class="btn btn-secondary btn-sm">&larr;
+                        </button>
+                        <button class="btn btn-secondary btn-sm">&rarr;
+                        </button>
+                    </div>
+                    <!-- /.btn-group -->
+                </div>
+                <!-- /.float-right -->
+            </div>
+        </div>
+    </div>
+    <!-- /. box -->
+</div>
+<!-- /.col -->
+<!-- /.row -->
+
+
+      </div>
+    </div>
+  </div>
+
+  <div id="docsModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Example modal</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>You're looking at an example modal in the dashboard theme.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Cool, got it!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <script src="../assets/js/tether.min.js"></script>
+    <script src="../assets/js/chart.js"></script>
+    <script src="../assets/js/tablesorter.min.js"></script>
+    <script src="../assets/js/toolkit.js"></script>
+    <script src="../assets/js/application.js"></script>
+    <script>
+      // execute/clear BS loaders for docs
+      $(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})
+    </script>
+  </body>
+</html>
+
