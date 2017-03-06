@@ -53,3 +53,13 @@ a.custom-last span{
   box-shadow: 0 0 5px gray;
   margin: 15px auto;
 }
+.product-preview-div{
+  overflow: hidden;
+}
+.product-preview-img{
+  width: 200px;
+  position: absolute;
+  top: calc(50% - 180px);
+  left: calc(50% - 100px);
+  z-index: 1;
+}

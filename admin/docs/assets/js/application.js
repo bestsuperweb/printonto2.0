@@ -399,3 +399,14 @@ $(function () {
     })
     .trigger('redraw.bs.charts')
 });
+
+
+var product_preview_location = $('.product-preview-img').offset();
+var product_background_location = $('.product-img-background').offset();
+$('.preview-location').eq(0).val(product_preview_location.top);
+$('.preview-location').eq(1).val(product_preview_location.left);
+
+$('.preview-location').on('change', function(){
+  $('.product-preview-img').offset({ top: $('.preview-location').eq(0).val(), left: $('.preview-location').eq(1).val() });
+});
+

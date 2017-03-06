@@ -43,10 +43,10 @@
 				<!-- Links -->
 				<ul class="nav navbar-nav pull-xs-right main-menu desktop-menu">
 					<li class="nav-item">
-						<a class="nav-link" href="#">about</a>
+						<a class="nav-link" href="about.html">about</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">why choose us?</a>
+						<a class="nav-link" href="why_choose_us.html">why choose us?</a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" data-hover="dropdown">our works</a>
@@ -58,7 +58,7 @@
 						</ul>
 					</li>
 					<li class="nav-item">
-						<a href="#" class="nav-link">blog</a>
+						<a href="blog_post.html" class="nav-link">blog</a>
 					</li>
 					<li class="nav-item">
 						<a href="#" class="nav-link">contact</a>
