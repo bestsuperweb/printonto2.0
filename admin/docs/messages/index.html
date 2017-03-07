@@ -136,7 +136,7 @@
         <div class="col-md-12 box-body no-padding">
             <div class="mailbox-controls">
                 <!-- Check all button -->
-                <button title="create new message" class="btn btn-secondary btn-sm form-check-toggle">&#x2709;
+                <button title="create new message" href="#newModal" data-toggle="modal" class="btn btn-secondary btn-sm form-check-toggle">&#x2709;
                 </button>
                 <div class="btn-group">
                     <button title="select all" class="btn btn-secondary btn-sm">&#x2611;
@@ -459,19 +459,20 @@
     </div>
   </div>
 
-  <div id="docsModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div id="newModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog">
     <div class="modal-content">
 
       <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Example modal</h4>
+        <h4 class="modal-title" id="myModalLabel">Create new message</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
       <div class="modal-body">
-        <p>You're looking at an example modal in the dashboard theme.</p>
+        <input type="text" name="" class="form-control" placeholder="Subject"><br>
+        <textarea class="form-control" rows="10" placeholder="Message..."></textarea>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Cool, got it!</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Create</button>
       </div>
     </div>
   </div>

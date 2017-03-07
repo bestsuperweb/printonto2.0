@@ -203,7 +203,7 @@
           <span class="text-muted">$200</span>
         </a>
       
-        <a class="list-group-item list-group-item-action justify-content-between custom-last" href="#">
+        <a class="list-group-item list-group-item-action justify-content-between custom-last" href="#newModal" data-toggle="modal">
           <span class="list-group-progress" style="width: 100%;"></span>
           <span><strong>CREATE NEW CUSTOMER</strong></span>
           <span style="color: green !important; font-size: 35px;" class="text-muted">&#x2622;</span>
@@ -220,19 +220,21 @@
     </div>
   </div>
 
-  <div id="docsModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div id="newModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog">
     <div class="modal-content">
 
       <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Example modal</h4>
+        <h4 class="modal-title" id="myModalLabel">Create New User</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
       <div class="modal-body">
-        <p>You're looking at an example modal in the dashboard theme.</p>
+        <input type="text" name="" class="form-control" placeholder="User Name"><br>
+        <input type="text" name="" class="form-control" placeholder="User ID"><br>
+        <input type="text" name="" class="form-control" placeholder="Address"><br>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Cool, got it!</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Create new user</button>
       </div>
     </div>
   </div>
