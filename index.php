@@ -49,33 +49,35 @@
 						<a class="nav-link" href="why_choose_us.html">why choose us?</a>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" data-hover="dropdown">our works</a>
+						<a class="nav-link dropdown-toggle" href="portfolio_product.html" data-toggle="dropdown" data-hover="dropdown">our works</a>
 						<ul class="dropdown-menu">
-							<li><a href="">Canvas</a></li>
-	                      	<li><a href="">Wood</a></li>
-	                      	<li><a href="">Metal</a></li>
-	                      	<li><a href="">Vynil</a></li>
+							<li><a href="single_product.html">Canvas</a></li>
+	                      	<li><a href="single_product.html">Wood</a></li>
+	                      	<li><a href="single_product.html">Metal</a></li>
+	                      	<li><a href="single_product.html">Vynil</a></li>
 						</ul>
 					</li>
 					<li class="nav-item">
-						<a href="blog_post.html" class="nav-link">blog</a>
+						<a href="blog_portfolio.html" class="nav-link">blog</a>
 					</li>
 					<li class="nav-item">
-						<a href="#" class="nav-link">contact</a>
+						<a href="customer_dashboard.html" class="nav-link">contact</a>
 					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">get started</a>
+					<li class="nav-item nav-active">
+						<a href="index.php" class="nav-link">get started</a>
 					</li>
 				</ul>
 				<div class="cart-link desktop-cart wow bounceInDown">
-					<img src="assets/img/cart-img.png">
-					<div class="count-cart">2</div>
+					<a href="customer_order.html">
+                        <img src="assets/img/cart-img.png">
+    					<div class="count-cart">2</div>
+                    </a>
 				</div>
 
 				<!-- mobile menu -->
 				<ul class="nav navbar-nav pull-xs-right mobile-menu">
 					<li class="nav-item mobile-cart">
-						<a href="#" class="nav-link"><img src="assets/img/cart-img.png"><span class="count-cart">2</span></a>
+						<a href="customer_order.html" class="nav-link"><img src="assets/img/cart-img.png"><span class="count-cart">2</span></a>
 					</li>
 					<li class="nav-item">
 						<a href="#" class="nav-link" id="navbarSideButton">
@@ -92,28 +94,28 @@
 				   <a href="#" class="side-link top"><</a>
 				  </li>
 				  <li class="navbar-side-item">
-				    <a href="#" class="side-link">about</a>
+				    <a href="about.html" class="side-link">about</a>
 				  </li>
 				  <li class="navbar-side-item">
-				    <a href="#" class="side-link">why choose us?</a>
+				    <a href="why_choose_us.html" class="side-link">why choose us?</a>
 				  </li>
 				  <li class="navbar-side-item">
-				    <a href="#" class="side-link" data-toggle="dropdown" data-hover="dropdown">our works</a>
+				    <a href="portfolio_product.html" class="side-link" data-toggle="dropdown" data-hover="dropdown">our works</a>
 				    <ul class="collapse dropdown-menu">
-						<li><a href="">Canvas</a></li>
-                      	<li><a href="">Wood</a></li>
-                      	<li><a href="">Metal</a></li>
-                      	<li><a href="">Vynil</a></li>
+						<li><a href="single_product.html">Canvas</a></li>
+                      	<li><a href="single_product.html">Wood</a></li>
+                      	<li><a href="single_product.html">Metal</a></li>
+                      	<li><a href="single_product.html">Vynil</a></li>
 					</ul>
 				  </li>
 				  <li class="navbar-side-item">
-				    <a href="#" class="side-link">blog</a>
+				    <a href="blog_portfolio.html" class="side-link">blog</a>
 				  </li>
 				  <li class="navbar-side-item">
-				    <a href="#" class="side-link">contact</a>
+				    <a href="customer_dashboard.html" class="side-link">contact</a>
 				  </li>	
-				  <li class="navbar-side-item">
-				    <a href="#" class="side-link">get started</a>
+				  <li class="navbar-side-item nav-active">
+				    <a href="index.php" class="side-link">get started</a>
 				  </li>					  
 				</ul>
 				<div class="overlay"></div>

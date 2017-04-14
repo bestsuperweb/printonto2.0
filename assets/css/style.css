@@ -331,6 +331,9 @@ URL: https://github.com/superbestdev/printontotheme
 		opacity: 0.3;
 		z-index: 990;
 	}
+	#header .nav-active{
+		background: #f39c12;
+	}
 
 	#footer{
 		padding: 65px 0;
