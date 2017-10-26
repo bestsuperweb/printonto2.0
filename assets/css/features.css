@@ -1,0 +1,81 @@
+
+@font-face {
+  font-family: HelveticaNeueLTStd;
+  src: font-url("../features/HelveticaNeueLTStd/HelveticaNeueLTStd-Bd.woff2") format("woff2"),
+  font-url("../features/HelveticaNeueLTStd/HelveticaNeueLTStd-Bd.ttf") format("truetype"),
+  font-url("../features/HelveticaNeueLTStd/HelveticaNeueLTStd-Bd.woff") format("woff");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+
+section#features1{
+	background-image: url('../img/features/features/features-1.png');
+	text-align: center;
+	padding: 15vw 0;	
+}
+
+section#features1 h1{
+	font-family: "Helvetica Neue LT Std", Helvetica, arial;
+	font-size: 80px;
+	color: #fff;
+}
+
+section{
+	padding: 5vw;
+}
+
+.text-div{
+	padding: 4vw;
+}
+
+.text-div h5{
+	font-size: 24px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid #1e22aa;
+    display: inline-block;
+    /*font-family: 'Muli';*/
+    color: #666666;
+}
+
+.text-div p{
+	/*font-family: 'HelveticaNeueLTStd';*/
+	font-family: 'Roboto';
+	font-size: 40px;
+	color: #666666;
+	line-height: 1.3;
+}
+section#features3{
+	padding: 0;
+}
+
+section#features3 .mark-img{
+	margin-bottom: -250px;
+	margin-top: -250px;
+	z-index: 10;
+	margin-left: 4%;
+}
+
+section#features5{
+	background-color: #1e22aa;
+	padding-bottom: 12vw;
+}
+
+section#features5 .text-div h5, section#features5 .text-div p{
+	color: #fff;
+	border-color: #fff;
+} 
+
+section#features6{
+	margin-top: -5vw;
+	margin-right: 5vw;
+	background: #fff;
+}
+
+
+
+
+
+
+
+
